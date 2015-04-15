@@ -1,0 +1,99 @@
+/* PROJECT PAGE STYLE */
+/* line 3, ../../app/styles/projectPage.scss */
+#headProjectSite {
+  margin-top: 0;
+  top: 0;
+}
+/* line 5, ../../app/styles/projectPage.scss */
+#headProjectSite h1 {
+  font-size: 2em;
+}
+/* line 8, ../../app/styles/projectPage.scss */
+#headProjectSite h3 {
+  font-size: 1.1em;
+}
+/* line 11, ../../app/styles/projectPage.scss */
+#headProjectSite h1, #headProjectSite h3 {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 16, ../../app/styles/projectPage.scss */
+#head-coloured {
+  background-color: #f6f4f4;
+  padding-bottom: 5px;
+  padding-top: 20px;
+}
+
+/* line 21, ../../app/styles/projectPage.scss */
+#projectRow {
+  background-color: #444444;
+}
+
+/* line 24, ../../app/styles/projectPage.scss */
+#projectContainer {
+  background-color: #444444;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  padding-top: 30px;
+}
+/* line 30, ../../app/styles/projectPage.scss */
+#projectContainer section {
+  position: relative;
+  top: 5px;
+}
+
+/* line 36, ../../app/styles/projectPage.scss */
+#projectText {
+  padding-bottom: 40px;
+  position: relative;
+}
+@media (min-width: 992px) {
+  /* line 36, ../../app/styles/projectPage.scss */
+  #projectText {
+    margin-top: 0;
+  }
+  /* line 42, ../../app/styles/projectPage.scss */
+  #projectText h3 {
+    margin-top: 40px;
+    padding-bottom: 25px;
+  }
+}
+/* line 48, ../../app/styles/projectPage.scss */
+#projectText p {
+  color: #F6F4F4;
+  font-size: 1.6em;
+  line-height: 26pt;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
+/* line 55, ../../app/styles/projectPage.scss */
+#projectText h3 {
+  font-size: 2em;
+}
+
+/* line 59, ../../app/styles/projectPage.scss */
+#sublineProject {
+  font-size: 1em;
+}
+
+/* line 63, ../../app/styles/projectPage.scss */
+.imagePadding {
+  padding: 15px;
+}
+
+@media (min-width: 992px) {
+  /* line 66, ../../app/styles/projectPage.scss */
+  .fixed-md {
+    position: fixed;
+  }
+}
+@media (max-width: 992px) {
+  /* line 66, ../../app/styles/projectPage.scss */
+  .fixed-md {
+    position: relative;
+  }
+}
+
+/*# sourceMappingURL=projectPage.css.map */

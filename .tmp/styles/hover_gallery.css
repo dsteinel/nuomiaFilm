@@ -1,0 +1,200 @@
+/* line 2, ../../app/styles/hover_gallery.scss */
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+/* line 3, ../../app/styles/hover_gallery.scss */
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: '';
+}
+
+/* line 4, ../../app/styles/hover_gallery.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 7, ../../app/styles/hover_gallery.scss */
+.hover-effect-grid {
+  position: relative;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+}
+
+/* Common style */
+/* line 15, ../../app/styles/hover_gallery.scss */
+.hover-effect-grid figure {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* line 22, ../../app/styles/hover_gallery.scss */
+.hover-effect-grid figure img {
+  position: relative;
+  display: block;
+  height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+}
+
+/* line 30, ../../app/styles/hover_gallery.scss */
+.hover-effect-grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* line 39, ../../app/styles/hover_gallery.scss */
+.hover-effect-grid figure figcaption::before,
+.hover-effect-grid figure figcaption::after {
+  pointer-events: none;
+}
+
+/* line 44, ../../app/styles/hover_gallery.scss */
+.hover-effect-grid figure figcaption,
+.hover-effect-grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+/* line 55, ../../app/styles/hover_gallery.scss */
+.hover-effect-grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+/* line 63, ../../app/styles/hover_gallery.scss */
+.hover-effect-grid figure h4 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+
+/* line 68, ../../app/styles/hover_gallery.scss */
+.hover-effect-grid figure h4 span {
+  font-weight: 800;
+}
+
+/* line 72, ../../app/styles/hover_gallery.scss */
+.hover-effect-grid figure h4,
+.hover-effect-grid figure p {
+  margin: 0;
+}
+
+/* line 77, ../../app/styles/hover_gallery.scss */
+.hover-effect-grid figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+/* Individual effects */
+/*---------------*/
+/***** Sarah *****/
+/*---------------*/
+/* line 89, ../../app/styles/hover_gallery.scss */
+.image-border img {
+  padding: 5px;
+}
+
+/* line 93, ../../app/styles/hover_gallery.scss */
+figure.centerText-effect img {
+  max-width: none;
+  width: calc(100% + 20px);
+  transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-15px, 0, 0);
+  transform: translate3d(-15px, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  opacity: 1;
+}
+
+/* line 105, ../../app/styles/hover_gallery.scss */
+figure.centerText-effect:hover img {
+  opacity: 0.65;
+  -webkit-transform: translate3d(-5px, 0, 0);
+  transform: translate3d(-5px, 0, 0);
+}
+
+/* line 111, ../../app/styles/hover_gallery.scss */
+figure.centerText-effect h4 {
+  padding-top: 15%;
+  transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0, -20px, 0);
+  transform: translate3d(0, -20px, 0);
+  opacity: 0;
+}
+
+/* line 120, ../../app/styles/hover_gallery.scss */
+figure.centerText-effect p {
+  padding: 10px 0;
+  opacity: 0;
+  transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
+}
+
+/* line 129, ../../app/styles/hover_gallery.scss */
+figure.centerText-effect:hover figcaption::before,
+figure.centerText-effect:hover figcaption::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 135, ../../app/styles/hover_gallery.scss */
+figure.centerText-effect:hover p,
+figure.centerText-effect:hover h4 {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* LINIE */
+/* line 144, ../../app/styles/hover_gallery.scss */
+figure.centerText-effect figcaption::before {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  content: '';
+  opacity: 0;
+  transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+/* line 156, ../../app/styles/hover_gallery.scss */
+figure.centerText-effect figcaption::before {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+
+/* line 163, ../../app/styles/hover_gallery.scss */
+figure.centerText-effect:hover figcaption::before {
+  opacity: .7;
+  -webkit-transform: scale(0.5, 1);
+  /* NUR 50% der Linie */
+  transform: scale(0.5, 1);
+}
+
+/*******/
+
+/*# sourceMappingURL=hover_gallery.css.map */

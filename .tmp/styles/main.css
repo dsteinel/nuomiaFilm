@@ -1,0 +1,215 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Karma:300|Unica+One);
+/* line 14, ../../app/styles/main.scss */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* line 21, ../../app/styles/main.scss */
+body, html {
+  overflow-x: hidden;
+  background-color: #444444;
+}
+
+/* line 26, ../../app/styles/main.scss */
+body {
+  padding: 0;
+  background-color: #f6f4f4;
+}
+
+/* line 31, ../../app/styles/main.scss */
+p {
+  font-size: 1.2em;
+  font-family: 'Karma', serif;
+}
+
+/* line 36, ../../app/styles/main.scss */
+a {
+  color: #f6f4f4;
+}
+/* line 38, ../../app/styles/main.scss */
+a :hover {
+  text-decoration: none;
+  color: #f6f4f4;
+}
+
+/* line 44, ../../app/styles/main.scss */
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 3em;
+  letter-spacing: 0.2em;
+  color: #333;
+}
+
+/* line 52, ../../app/styles/main.scss */
+h3 {
+  font-family: 'Karma', serif;
+  font-weight: 400;
+  font-size: 1.4em;
+  color: #16a085;
+}
+
+/* line 59, ../../app/styles/main.scss */
+h4 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/* line 65, ../../app/styles/main.scss */
+#headIndexSite {
+  margin-top: 130px;
+  margin-bottom: 70px;
+}
+
+/* line 70, ../../app/styles/main.scss */
+#mapContainer {
+  margin: 130px 0 0 -60px;
+}
+/* line 72, ../../app/styles/main.scss */
+#mapContainer h4 {
+  margin-top: -0.8em;
+}
+
+/* line 77, ../../app/styles/main.scss */
+.four-boxes > div > * {
+  padding-bottom: 5px;
+}
+
+/* line 81, ../../app/styles/main.scss */
+#preloader {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 9999;
+  /*   background-color: #34495e;
+   */
+  background-color: rgba(220, 220, 220, 0.5);
+}
+/* line 89, ../../app/styles/main.scss */
+#preloader img {
+  width: 50px;
+  height: auto;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/**** CENTERING ****/
+/* line 99, ../../app/styles/main.scss */
+.center-text-vertical p, .center-text-vertical h4 {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 109, ../../app/styles/main.scss */
+.center-image-vertical img {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 119, ../../app/styles/main.scss */
+.center-block-of-text-vertical p, .center-block-of-text-vertical h4 {
+  /*     padding-left: 2em;
+   */
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 129, ../../app/styles/main.scss */
+section {
+  display: block;
+  margin: 0 auto 1em;
+  /*   height: 250px;
+   */
+}
+
+/* line 136, ../../app/styles/main.scss */
+#aboutSection {
+  background-color: #16a085;
+  height: 100%;
+  margin-top: 100px;
+}
+/* line 142, ../../app/styles/main.scss */
+#aboutSection h1, #aboutSection h2, #aboutSection h3 {
+  color: #f6f4f4;
+  padding: 20px 0 0 0;
+}
+/* line 146, ../../app/styles/main.scss */
+#aboutSection p {
+  color: #F6F4F4;
+  font-size: 1.6em;
+  line-height: 26pt;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  padding-bottom: 30px;
+}
+@media (max-width: 767px) {
+  /* line 146, ../../app/styles/main.scss */
+  #aboutSection p {
+    text-align: justify;
+  }
+}
+
+/* line 159, ../../app/styles/main.scss */
+#contactSection {
+  background-color: #397F66;
+  height: 100%;
+}
+/* line 164, ../../app/styles/main.scss */
+#contactSection h1, #contactSection h2, #contactSection h3 {
+  color: #f6f4f4;
+  padding: 20px 0 0 0;
+}
+/* line 168, ../../app/styles/main.scss */
+#contactSection p {
+  color: #F6F4F4;
+  font-size: 1.6em;
+  line-height: 26pt;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  padding-bottom: 30px;
+}
+@media (max-width: 767px) {
+  /* line 168, ../../app/styles/main.scss */
+  #contactSection p {
+    text-align: justify;
+  }
+}
+
+/**** MY HACK ****/
+/* centered columns styles */
+/* Extra Small Devices, .visible-xs-* */
+@media (max-width: 767px) {
+  /* line 188, ../../app/styles/main.scss */
+  #germanyMapBlock {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 193, ../../app/styles/main.scss */
+  .center-block-of-text-vertical p, .center-block-of-text-vertical h4 {
+    padding-left: 0;
+  }
+}
+/* Small Devices, .visible-sm-* */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 201, ../../app/styles/main.scss */
+  #germanyMapBlock {
+    margin: 0;
+    padding: 0;
+  }
+}
+/* Medium Devices, .visible-md-* */
+/* Large Devices, .visible-lg-* */
+
+/*# sourceMappingURL=main.css.map */
