@@ -61,21 +61,30 @@ h4{
   margin-top: 0;
 }
 
+#head{
+  margin-top: 130px;
+}
 
 #headIndexSite{
    margin-top: 130px;
-   margin-bottom: 70px;
-}
-
-#mapContainer{
-   margin: 130px 0 0 -60px;
-   h4{
-      margin-top: -0.8em;
-   }
 }
 
 .four-boxes > div > *{
    padding-bottom: 5px;
+}
+
+.margin-to-row{
+  padding-top: 20px;
+}
+
+#work{
+  margin: 70px 0;
+  section{
+    padding-top: 20px;
+  }
+  .row{
+    padding: 100px 0 70px 0;
+  }
 }
 
 #preloader{
@@ -93,10 +102,47 @@ h4{
   }
 }
 
+
+#concreteFirst{
+    margin-top: -14px;
+}
+/**** TEXT OVERFLOW CONCRETE ****/
+
+.concrete-text-overlay {
+  position: relative;
+}
+
+/* Common style */
+.concrete-text-overlay figure {
+  position: relative;
+  text-align: left;
+}
+
+.concrete-text-overlay figure img {
+  position: relative;
+  display: block;
+  height: 100%;
+  max-width: 100%;
+  opacity: 1;
+}
+
+.concrete-text-overlay figure figcaption {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.concrete-text-overlay figure figcaption,
+.concrete-text-overlay figure figcaption > a {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+
 /**** CENTERING ****/
 
 .center-text-vertical {
-  p,h4{
+  p,h4,h2{
     position: relative;
     top: 50%;
     	-webkit-transform: translateY(-50%);
@@ -132,16 +178,30 @@ section {
 /*   height: 250px;
  */
 }
+.about-text-center{
+  height: 100%;
+  top: 25%;
+}
+
+#video-text-overlay{
+  margin: 0;
+  width: auto;
+  left: 0;
+  text-align: left;
+  margin-top: 30%;
+}
 
 #aboutSection{
+   margin: -14px 0 70px 0;
 
-   background-color: rgb(22,160,133);
-   height: 100%;
-   margin-top: 100px;
-
-   h1,h2,h3{
+   h1, h2, h3{
       color: rgb(246, 244, 244);
-      padding: 20px 0 0 0;
+   }
+   h1{
+    padding-top: 25px;
+   }
+   h2,h3{
+    padding-bottom: 15px;
    }
    p{
       color: #F6F4F4;
@@ -154,28 +214,30 @@ section {
       }
       padding-bottom: 30px;
    }
+   figcaption{
+    top: 25%;
+   }
 }
 
 #contactSection{
-
-   background-color: #397F66;
+   color: #000;
    height: 100%;
+   padding-bottom: 30px;
+   text-align: center;
 
    h1,h2,h3{
-      color: rgb(246, 244, 244);
       padding: 20px 0 0 0;
    }
    p{
-      color: #F6F4F4;
       font-size: 1.6em;
       line-height: 26pt;
       font-family: 'Source Sans Pro', sans-serif;
       font-weight: 300;
-      @media (max-width: 767px) {
-         text-align: justify;
-      }
-    padding-bottom: 30px;
-   }
+    }
+    a{
+      color: #000;
+      text-decoration: none;
+    }
 }
 
 

@@ -2,16 +2,40 @@
 
 /**
  * @ngdoc overview
- * @name dsteinel2015App
+ * @name noumiaApp
  * @description
- * # dsteinel2015App
+ * # noumiaApp
  *
  * Main module of the application.
  */
+ /* global $ */
 
+$( document ).ready(function() {
+    console.log( 'ready!' );
 
- var dsteinel2015App = angular
-  .module('dsteinel2015App', [
+    $(window).scroll(function() {
+        var windowscroll = $(window).scrollTop();
+        if (windowscroll >= 100) {
+            $('nav').addClass('fixed');
+            $('#headIndexSite section').each(function(i) {
+                if ($(this).position().top <= windowscroll - 20) {
+                    $('nav a.active').removeClass('active');
+                    $('nav a').eq(i).addClass('active');
+                }
+            });
+
+        } else {
+
+            $('nav').removeClass('fixed');
+            $('nav a.active').removeClass('active');
+            $('nav a:first').addClass('active');
+        }
+
+    }).scroll();
+});
+
+ var noumiaApp = angular
+  .module('noumiaApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
@@ -25,25 +49,21 @@
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/hej', {
+      .when('/Djado-Ivan', {
         templateUrl: 'views/project.html',
-        controller: 'hejCtrl'
+        controller: 'ivanCtrl'
       })
-      .when('/ois', {
-        templateUrl: 'views/project.html',
-        controller: 'oisCtrl'
+      .when('/Leni', {
+        templateUrl: 'views/leni.html',
+        controller: 'leniCtrl'
       })
-      .when('/n2k', {
-        templateUrl: 'views/project.html',
-        controller: 'n2kCtrl'
+      .when('/Maedchenstadtplan', {
+        templateUrl: 'views/maedchenstadtplan.html',
+        controller: 'maedchenCtrl'
       })
       .when('/wayw', {
         templateUrl: 'views/project.html',
         controller: 'waywCtrl'
-      })
-      .when('/tronic', {
-        templateUrl: 'views/project.html',
-        controller: 'tronicCtrl'
       })
       .otherwise({
         redirectTo: '/views/main.html'
@@ -53,7 +73,7 @@
   /**** HIDE / SHOW LOADING ****/
 
 
-dsteinel2015App.run(function($rootScope, $timeout, $window) {
+noumiaApp.run(function($rootScope, $timeout, $window) {
 
    $rootScope.layout = {};
    $rootScope.layout.loading = false;
@@ -93,9 +113,9 @@ dsteinel2015App.run(function($rootScope, $timeout, $window) {
    });
 });
 
-dsteinel2015App.controller('TransitionCtrl', function($scope) {
+noumiaApp.controller('TransitionCtrl', function($scope) {
     $scope.pageClass = 'page-transition';
 });
-dsteinel2015App.controller('MainCtrl', function($scope) {
+noumiaApp.controller('MainCtrl', function($scope) {
     $scope.pageClass = 'page-transition';
 });

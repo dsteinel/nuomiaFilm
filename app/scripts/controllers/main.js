@@ -2,32 +2,26 @@
 
 /**
  * @ngdoc function
- * @name dsteinel2015App.controller:mainCtrl
+ * @name noumiaApp.controller:mainCtrl
  * @description
  * # hejCtrl
- * Controller of the dsteinel2015App
+ * Controller of the noumiaApp
  */
- angular.module('dsteinel2015App')
- .controller('hejCtrl', function ($scope) {
-   $scope.projectHead = '#hej';
+ angular.module('noumiaApp')
+ .controller('ivanCtrl', function ($scope) {
+   $scope.projectHead = 'ivanCtrl';
    $scope.projectDescription = 'This is the text about my #hej Project';
-   $scope.mainImage = '/images/hej/hej_0.jpg';
+   $scope.video = '/video/startPage_Video.mp4';
    $scope.sublineProject = '2015 @btk, Bachelor';
-   $scope.projectImages = [
-   {image: 'images/hej/hej_1.jpg', description: 'Hej 01'},
-   {image: 'images/hej/hej_2.jpg', description: 'Hej 02'},
-   {image: 'images/hej/hej_5.jpg', description: 'Hej 05'},
-   {image: 'images/hej/hej_4.jpg', description: 'Hej 04'}
-   ];
  });
- angular.module('dsteinel2015App')
+ angular.module('noumiaApp')
  .controller('oisCtrl', function ($scope) {
   $scope.projectHead = 'ois';
   $scope.projectDescription = 'This is the text about my OIS Project';
   $scope.mainImage = '/images/hej_title.jpg';
 });
 
- angular.module('dsteinel2015App')
+ angular.module('noumiaApp')
  .controller('n2kCtrl', function ($scope) {
    $scope.projectHead = 'Nice 2 Know';
    $scope.projectDescription = 'Nice 2 Know is a berlin based webapp';
@@ -44,7 +38,7 @@
    ];
  });
 
- angular.module('dsteinel2015App')
+ angular.module('noumiaApp')
  .controller('waywCtrl', function ($scope) {
    $scope.projectHead = 'Why Are You Watching';
    $scope.projectDescription = 'Wroking with one Microsoft Kinect and 2 Arduinos the machine tries to follow every person who stands infront of it.';
@@ -61,7 +55,7 @@
  });
 
 
- angular.module('dsteinel2015App')
+ angular.module('noumiaApp')
  .controller('tronicCtrl', function ($scope) {
    $scope.projectHead = 'Tronic';
    $scope.projectDescription = 'Wroking with one Microsoft Kinect and 2 Arduinos the machine tries to follow every person who stands infront of it.';

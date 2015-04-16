@@ -1,5 +1,5 @@
 {
-  "name": "dsteinel2015",
+  "name": "noumia",
   "version": "0.0.0",
   "dependencies": {
     "angular": "^1.3.0",
@@ -15,5 +15,5 @@
     "angular-mocks": "^1.3.0"
   },
   "appPath": "app",
-  "moduleName": "dsteinel2015App"
+  "moduleName": "noumiaApp"
 }

@@ -58,27 +58,40 @@ h4 {
   margin-top: 0;
 }
 
-/* line 65, ../../app/styles/main.scss */
+/* line 64, ../../app/styles/main.scss */
+#head {
+  margin-top: 130px;
+}
+
+/* line 68, ../../app/styles/main.scss */
 #headIndexSite {
   margin-top: 130px;
-  margin-bottom: 70px;
 }
 
-/* line 70, ../../app/styles/main.scss */
-#mapContainer {
-  margin: 130px 0 0 -60px;
-}
 /* line 72, ../../app/styles/main.scss */
-#mapContainer h4 {
-  margin-top: -0.8em;
-}
-
-/* line 77, ../../app/styles/main.scss */
 .four-boxes > div > * {
   padding-bottom: 5px;
 }
 
-/* line 81, ../../app/styles/main.scss */
+/* line 76, ../../app/styles/main.scss */
+.margin-to-row {
+  padding-top: 20px;
+}
+
+/* line 80, ../../app/styles/main.scss */
+#work {
+  margin: 70px 0;
+}
+/* line 82, ../../app/styles/main.scss */
+#work section {
+  padding-top: 20px;
+}
+/* line 85, ../../app/styles/main.scss */
+#work .row {
+  padding: 100px 0 70px 0;
+}
+
+/* line 90, ../../app/styles/main.scss */
 #preloader {
   width: 100%;
   height: 100%;
@@ -88,7 +101,7 @@ h4 {
    */
   background-color: rgba(220, 220, 220, 0.5);
 }
-/* line 89, ../../app/styles/main.scss */
+/* line 98, ../../app/styles/main.scss */
 #preloader img {
   width: 50px;
   height: auto;
@@ -98,16 +111,57 @@ h4 {
   transform: translateY(-50%);
 }
 
+/* line 106, ../../app/styles/main.scss */
+#concreteFirst {
+  margin-top: -14px;
+}
+
+/**** TEXT OVERFLOW CONCRETE ****/
+/* line 111, ../../app/styles/main.scss */
+.concrete-text-overlay {
+  position: relative;
+}
+
+/* Common style */
+/* line 116, ../../app/styles/main.scss */
+.concrete-text-overlay figure {
+  position: relative;
+  text-align: left;
+}
+
+/* line 121, ../../app/styles/main.scss */
+.concrete-text-overlay figure img {
+  position: relative;
+  display: block;
+  height: 100%;
+  max-width: 100%;
+  opacity: 1;
+}
+
+/* line 129, ../../app/styles/main.scss */
+.concrete-text-overlay figure figcaption {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* line 134, ../../app/styles/main.scss */
+.concrete-text-overlay figure figcaption,
+.concrete-text-overlay figure figcaption > a {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
 /**** CENTERING ****/
-/* line 99, ../../app/styles/main.scss */
-.center-text-vertical p, .center-text-vertical h4 {
+/* line 145, ../../app/styles/main.scss */
+.center-text-vertical p, .center-text-vertical h4, .center-text-vertical h2 {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
-/* line 109, ../../app/styles/main.scss */
+/* line 155, ../../app/styles/main.scss */
 .center-image-vertical img {
   position: relative;
   top: 50%;
@@ -115,7 +169,7 @@ h4 {
   transform: translateY(-50%);
 }
 
-/* line 119, ../../app/styles/main.scss */
+/* line 165, ../../app/styles/main.scss */
 .center-block-of-text-vertical p, .center-block-of-text-vertical h4 {
   /*     padding-left: 2em;
    */
@@ -125,7 +179,7 @@ h4 {
   transform: translateY(-50%);
 }
 
-/* line 129, ../../app/styles/main.scss */
+/* line 175, ../../app/styles/main.scss */
 section {
   display: block;
   margin: 0 auto 1em;
@@ -133,18 +187,38 @@ section {
    */
 }
 
-/* line 136, ../../app/styles/main.scss */
-#aboutSection {
-  background-color: #16a085;
+/* line 181, ../../app/styles/main.scss */
+.about-text-center {
   height: 100%;
-  margin-top: 100px;
+  top: 25%;
 }
-/* line 142, ../../app/styles/main.scss */
+
+/* line 186, ../../app/styles/main.scss */
+#video-text-overlay {
+  margin: 0;
+  width: auto;
+  left: 0;
+  text-align: left;
+  margin-top: 30%;
+}
+
+/* line 194, ../../app/styles/main.scss */
+#aboutSection {
+  margin: -14px 0 70px 0;
+}
+/* line 197, ../../app/styles/main.scss */
 #aboutSection h1, #aboutSection h2, #aboutSection h3 {
   color: #f6f4f4;
-  padding: 20px 0 0 0;
 }
-/* line 146, ../../app/styles/main.scss */
+/* line 200, ../../app/styles/main.scss */
+#aboutSection h1 {
+  padding-top: 25px;
+}
+/* line 203, ../../app/styles/main.scss */
+#aboutSection h2, #aboutSection h3 {
+  padding-bottom: 15px;
+}
+/* line 206, ../../app/styles/main.scss */
 #aboutSection p {
   color: #F6F4F4;
   font-size: 1.6em;
@@ -154,56 +228,58 @@ section {
   padding-bottom: 30px;
 }
 @media (max-width: 767px) {
-  /* line 146, ../../app/styles/main.scss */
+  /* line 206, ../../app/styles/main.scss */
   #aboutSection p {
     text-align: justify;
   }
 }
-
-/* line 159, ../../app/styles/main.scss */
-#contactSection {
-  background-color: #397F66;
-  height: 100%;
+/* line 217, ../../app/styles/main.scss */
+#aboutSection figcaption {
+  top: 25%;
 }
-/* line 164, ../../app/styles/main.scss */
+
+/* line 222, ../../app/styles/main.scss */
+#contactSection {
+  color: #000;
+  height: 100%;
+  padding-bottom: 30px;
+  text-align: center;
+}
+/* line 228, ../../app/styles/main.scss */
 #contactSection h1, #contactSection h2, #contactSection h3 {
-  color: #f6f4f4;
   padding: 20px 0 0 0;
 }
-/* line 168, ../../app/styles/main.scss */
+/* line 231, ../../app/styles/main.scss */
 #contactSection p {
-  color: #F6F4F4;
   font-size: 1.6em;
   line-height: 26pt;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
-  padding-bottom: 30px;
 }
-@media (max-width: 767px) {
-  /* line 168, ../../app/styles/main.scss */
-  #contactSection p {
-    text-align: justify;
-  }
+/* line 237, ../../app/styles/main.scss */
+#contactSection a {
+  color: #000;
+  text-decoration: none;
 }
 
 /**** MY HACK ****/
 /* centered columns styles */
 /* Extra Small Devices, .visible-xs-* */
 @media (max-width: 767px) {
-  /* line 188, ../../app/styles/main.scss */
+  /* line 250, ../../app/styles/main.scss */
   #germanyMapBlock {
     margin: 0;
     padding: 0;
   }
 
-  /* line 193, ../../app/styles/main.scss */
+  /* line 255, ../../app/styles/main.scss */
   .center-block-of-text-vertical p, .center-block-of-text-vertical h4 {
     padding-left: 0;
   }
 }
 /* Small Devices, .visible-sm-* */
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 201, ../../app/styles/main.scss */
+  /* line 263, ../../app/styles/main.scss */
   #germanyMapBlock {
     margin: 0;
     padding: 0;
