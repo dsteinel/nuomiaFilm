@@ -13,13 +13,23 @@
   <section>
     <div class="row">
       <div class="hover-effect-grid col-lg-12">
-       <figure class="concrete-text-overlay">
-        <video ng-src="{{video}}" width="100%" height="auto" autoplay></video>
+       <figure class="concrete-text-overlay" id="videoID">
+       <!-- <video>
+          <source src="{{video}}" width="100%" height="auto" type="video/mp4" />
+        </video> -->
+        <!-- <video id="currVideo" autoplay="none" preload="none" controls tabindex="0">
+            <source type="video/mp4" ng-src="{{ getVideoUrl(immediate.video, '.mp4') }}">
+          </video> -->
+
+          <iframe id="player1" ng-src="{{ getVideoUrl(immediate.video) }}" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
         <figcaption class="col-lg-3 col-lg-offset-1 pull-left" id="video-text-overlay">
-         <h2><span>{{projectDescription}}</span></h2>
-         <p id="sublineProject">
-           {{sublineProject}}
-         </p>
+           <div class="col-md-6">
+             <p><span>{{projectDescription}}</span></p>
+             <p>
+               {{sublineProject}}
+             </p>
+           </div>
        </figcaption>
      </figure>
    </div>

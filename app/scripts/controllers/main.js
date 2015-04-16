@@ -8,12 +8,25 @@
  * Controller of the noumiaApp
  */
  angular.module('noumiaApp')
- .controller('ivanCtrl', function ($scope) {
-   $scope.projectHead = 'ivanCtrl';
-   $scope.projectDescription = 'This is the text about my #hej Project';
-   $scope.video = '/video/startPage_Video.mp4';
-   $scope.sublineProject = '2015 @btk, Bachelor';
+ .controller('ivanCtrl', function ($scope, $sce) {
+   $scope.projectHead = 'Djado Ivan';
+   $scope.projectDescription = 'The 70 year old "Djado Ivan" lives in Grivitsa, a small bulgarian town close to the romanian border. In close communion with nature and his many animals, he spends his life on his small farm and thereby maintainins his very own rythm of life. In order to portray his life, Silke Meya (Director) and Laura Mentgen (Director of Photography) spent one month with Ivan in Bulgaria where they were able to capture his philosophy of life.';
+   $scope.sublineProject = 'Documentary, 20 minutes, Bulgaria, Germany';
+
+   // $scope.immediate = { video: $sce.trustAsResourceUrl('startPage_Video') };
+
+   //  $scope.getVideoUrl = function(video, ext) {
+   //    return video && $sce.trustAsResourceUrl('/video/' + video + ext);
+   //  };
+   $scope.immediate = { video: $sce.trustAsResourceUrl('https://player.vimeo.com/video/117572459?api=1&player_id=curVideo') };
+
+    $scope.getVideoUrl = function(video) {
+      return video && $sce.trustAsResourceUrl('https://player.vimeo.com/video/117572459?api=1&player_id=curVideo');
+    };
  });
+
+ 
+
  angular.module('noumiaApp')
  .controller('oisCtrl', function ($scope) {
   $scope.projectHead = 'ois';
