@@ -218,6 +218,10 @@ section {
   height: 100%;
   top: 25%;
 }
+
+.concrete-text-center h2{
+  height:200px;padding-top:74px;text-align:center;
+}
 #curVideo{
   width: 100%;
   height: 80%;
@@ -236,6 +240,33 @@ figure#videoID{
   width: auto;
 }
 
+.aboutSection{
+   margin: -14px 0 70px 0;
+
+   h1, h2, h3{
+      color: rgb(246, 244, 244);
+   }
+   h1{
+    padding-top: 25px;
+   }
+   h2,h3{
+    padding-bottom: 15px;
+   }
+   p{
+      color: #F6F4F4;
+      font-size: 1.6em;
+      line-height: 26px;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 300;
+      @media (max-width: 767px) {
+         text-align: justify;
+      }
+      padding-bottom: 30px;
+   }
+   figcaption{
+    top: 90px;
+   }
+}
 
 #contactSection{
    color: #000;

@@ -92,6 +92,7 @@
 
 figure.centerText-effect img {
 	max-width: none;
+	height: 100%;
 	width: -webkit-calc(100% + 20px);
 	width: calc(100% + 20px);
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;

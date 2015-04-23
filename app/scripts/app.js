@@ -114,7 +114,7 @@
 	    //hide loading gif
 	    $timeout(function(){
        $rootScope.layout.loading = false;
-     }, 200);
+     }, 100);
 
       /** SCROLL BACK TO TOP **/
       var interval = setInterval(function(){
@@ -122,7 +122,7 @@
          $window.scrollTo(0, 0);
          clearInterval(interval);
        }
-     }, 200);
+     }, 100);
 
     });
 

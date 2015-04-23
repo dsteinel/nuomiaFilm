@@ -112,6 +112,7 @@
 /* line 93, ../../app/styles/hover_gallery.scss */
 figure.centerText-effect img {
   max-width: none;
+  height: 100%;
   width: calc(100% + 20px);
   transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
@@ -122,19 +123,19 @@ figure.centerText-effect img {
   opacity: 1;
 }
 
-/* line 105, ../../app/styles/hover_gallery.scss */
+/* line 106, ../../app/styles/hover_gallery.scss */
 figure.centerText-effect:hover img {
   opacity: 0.65;
   -webkit-transform: translate3d(-5px, 0, 0);
   transform: translate3d(-5px, 0, 0);
 }
 
-/* line 111, ../../app/styles/hover_gallery.scss */
+/* line 112, ../../app/styles/hover_gallery.scss */
 figure.centerText-effect h2 {
   opacity: 0;
 }
 
-/* line 120, ../../app/styles/hover_gallery.scss */
+/* line 121, ../../app/styles/hover_gallery.scss */
 figure.centerText-effect p {
   padding: 10px 0;
   opacity: 0;
@@ -144,7 +145,7 @@ figure.centerText-effect p {
   transform: translate3d(0, 20px, 0);
 }
 
-/* line 129, ../../app/styles/hover_gallery.scss */
+/* line 130, ../../app/styles/hover_gallery.scss */
 figure.centerText-effect:hover figcaption::before,
 figure.centerText-effect:hover figcaption::after {
   opacity: 1;
@@ -152,7 +153,7 @@ figure.centerText-effect:hover figcaption::after {
   transform: scale(1);
 }
 
-/* line 135, ../../app/styles/hover_gallery.scss */
+/* line 136, ../../app/styles/hover_gallery.scss */
 figure.centerText-effect:hover p,
 figure.centerText-effect:hover h2 {
   opacity: 1;
