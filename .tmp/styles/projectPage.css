@@ -5,32 +5,37 @@
   top: 0;
 }
 /* line 5, ../../app/styles/projectPage.scss */
+#headProjectSite section {
+  text-align: center;
+  padding: 30px;
+}
+/* line 9, ../../app/styles/projectPage.scss */
 #headProjectSite h1 {
   font-size: 2em;
 }
-/* line 8, ../../app/styles/projectPage.scss */
+/* line 12, ../../app/styles/projectPage.scss */
 #headProjectSite h3 {
   font-size: 1.1em;
 }
-/* line 11, ../../app/styles/projectPage.scss */
+/* line 15, ../../app/styles/projectPage.scss */
 #headProjectSite h1, #headProjectSite h3 {
   margin: 0;
   padding: 0;
 }
 
-/* line 16, ../../app/styles/projectPage.scss */
+/* line 20, ../../app/styles/projectPage.scss */
 #head-coloured {
   background-color: #f6f4f4;
   padding-bottom: 5px;
   padding-top: 20px;
 }
 
-/* line 21, ../../app/styles/projectPage.scss */
+/* line 25, ../../app/styles/projectPage.scss */
 #projectRow {
   background-color: #444444;
 }
 
-/* line 24, ../../app/styles/projectPage.scss */
+/* line 28, ../../app/styles/projectPage.scss */
 #projectContainer {
   background-color: #444444;
   position: absolute;
@@ -38,29 +43,29 @@
   left: 0;
   padding-top: 30px;
 }
-/* line 30, ../../app/styles/projectPage.scss */
+/* line 34, ../../app/styles/projectPage.scss */
 #projectContainer section {
   position: relative;
   top: 5px;
 }
 
-/* line 36, ../../app/styles/projectPage.scss */
+/* line 40, ../../app/styles/projectPage.scss */
 #projectText {
   padding-bottom: 40px;
   position: relative;
 }
 @media (min-width: 992px) {
-  /* line 36, ../../app/styles/projectPage.scss */
+  /* line 40, ../../app/styles/projectPage.scss */
   #projectText {
     margin-top: 0;
   }
-  /* line 42, ../../app/styles/projectPage.scss */
+  /* line 46, ../../app/styles/projectPage.scss */
   #projectText h3 {
     margin-top: 40px;
     padding-bottom: 25px;
   }
 }
-/* line 48, ../../app/styles/projectPage.scss */
+/* line 52, ../../app/styles/projectPage.scss */
 #projectText p {
   color: #F6F4F4;
   font-size: 1.6em;
@@ -68,29 +73,29 @@
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
 }
-/* line 55, ../../app/styles/projectPage.scss */
+/* line 59, ../../app/styles/projectPage.scss */
 #projectText h3 {
   font-size: 2em;
 }
 
-/* line 59, ../../app/styles/projectPage.scss */
+/* line 63, ../../app/styles/projectPage.scss */
 #sublineProject {
   font-size: 1em;
 }
 
-/* line 63, ../../app/styles/projectPage.scss */
+/* line 67, ../../app/styles/projectPage.scss */
 .imagePadding {
   padding: 15px;
 }
 
 @media (min-width: 992px) {
-  /* line 66, ../../app/styles/projectPage.scss */
+  /* line 70, ../../app/styles/projectPage.scss */
   .fixed-md {
     position: fixed;
   }
 }
 @media (max-width: 992px) {
-  /* line 66, ../../app/styles/projectPage.scss */
+  /* line 70, ../../app/styles/projectPage.scss */
   .fixed-md {
     position: relative;
   }

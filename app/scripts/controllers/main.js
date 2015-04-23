@@ -18,24 +18,36 @@
    //  $scope.getVideoUrl = function(video, ext) {
    //    return video && $sce.trustAsResourceUrl('/video/' + video + ext);
    //  };
-   $scope.immediate = { video: $sce.trustAsResourceUrl('https://player.vimeo.com/video/117572459?api=1&player_id=curVideo') };
+   $scope.immediate = { video: $sce.trustAsResourceUrl('https://player.vimeo.com/video/117572459?api=1&player_id=player1') };
 
-    $scope.getVideoUrl = function(video) {
-      return video && $sce.trustAsResourceUrl('https://player.vimeo.com/video/117572459?api=1&player_id=curVideo');
-    };
- });
-
- 
-
- angular.module('noumiaApp')
- .controller('oisCtrl', function ($scope) {
-  $scope.projectHead = 'ois';
-  $scope.projectDescription = 'This is the text about my OIS Project';
-  $scope.mainImage = '/images/hej_title.jpg';
+   $scope.getVideoUrl = function(video) {
+      return video && $sce.trustAsResourceUrl('https://player.vimeo.com/video/117572459?api=1&player_id=player1');
+   };
 });
 
- angular.module('noumiaApp')
- .controller('n2kCtrl', function ($scope) {
+angular.module('noumiaApp')
+.controller('leniCtrl', function ($scope, $sce) {
+   $scope.projectHead = 'Leni';
+   $scope.projectDescription = 'Der Film ,,Leni” ist eine Tanzperformance der besonderen Art. Auf einem Berliner Trödel- markt führt die Performance- und Lebenskünstlerin Leni ein improvisiertes Tanzritual auf. Durch eine selbstgebastelte Pferdekopfmaske von der Außenwelt abgeschottet,horcht sie in sich hinein und spürt auf diese Weise immer neue Bewe- gungen in sich aufkommen. Mit anrührender Ehrlichkeit ber- ichtet sie von ihrer intensiven Selbsterfahrung.';
+   $scope.sublineProject = '';
+
+   $scope.immediate = { video: $sce.trustAsResourceUrl('https://player.vimeo.com/video/43307090?api=1&player_id=player1') };
+
+   $scope.getVideoUrl = function(video) {
+      return video && $sce.trustAsResourceUrl('https://player.vimeo.com/video/43307090?api=1&player_id=player1');
+   };
+});
+
+
+angular.module('noumiaApp')
+.controller('oisCtrl', function ($scope) {
+ $scope.projectHead = 'ois';
+ $scope.projectDescription = 'This is the text about my OIS Project';
+ $scope.mainImage = '/images/hej_title.jpg';
+});
+
+angular.module('noumiaApp')
+.controller('n2kCtrl', function ($scope) {
    $scope.projectHead = 'Nice 2 Know';
    $scope.projectDescription = 'Nice 2 Know is a berlin based webapp';
    $scope.sublineProject = '2012 @btk, 2.Semester';
@@ -49,10 +61,10 @@
    {image: 'images/n2k/n2k-6.jpg', description: 'n2k 06'},
    {image: 'images/n2k/n2k-7.jpg', description: 'n2k 07'}
    ];
- });
+});
 
- angular.module('noumiaApp')
- .controller('waywCtrl', function ($scope) {
+angular.module('noumiaApp')
+.controller('waywCtrl', function ($scope) {
    $scope.projectHead = 'Why Are You Watching';
    $scope.projectDescription = 'Wroking with one Microsoft Kinect and 2 Arduinos the machine tries to follow every person who stands infront of it.';
    $scope.sublineProject = '2012 @btk, 3.Semester';
@@ -65,11 +77,11 @@
    {image: 'images/wayw/wayw-5.jpg', description: 'wayw 05'},
    {image: 'images/wayw/wayw-1.jpg', description: 'wayw 06'}
    ];
- });
+});
 
 
- angular.module('noumiaApp')
- .controller('tronicCtrl', function ($scope) {
+angular.module('noumiaApp')
+.controller('tronicCtrl', function ($scope) {
    $scope.projectHead = 'Tronic';
    $scope.projectDescription = 'Wroking with one Microsoft Kinect and 2 Arduinos the machine tries to follow every person who stands infront of it.';
    $scope.sublineProject = '2012 @btk, 3.Semester';
@@ -83,4 +95,4 @@
    {image: 'images/tronic/tronic-8.jpg', description: 'tronic 08'},
    {image: 'images/tronic/tronic-7.jpg', description: 'tronic 06'}
    ];
- });
+});
