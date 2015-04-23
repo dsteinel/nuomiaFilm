@@ -2,26 +2,27 @@
 /* global $ */
 
 $( document ).ready(function() {
-    console.log( 'ready!' );
 
     $(window).scroll(function() {
         var windowscroll = $(window).scrollTop();
-        if (windowscroll >= 100) {
-            console.log(windowscroll);
-            $('nav').addClass('fixed');
-            $('.wrapper section').each(function(i) {
-                if ($(this).position().top <= windowscroll - 20) {
-                    $('nav a.active').removeClass('active');
-                    $('nav a').eq(i).addClass('active');
-                }
-            });
-
-        } else {
-
-            $('nav').removeClass('fixed');
-            $('nav a.active').removeClass('active');
-            $('nav a:first').addClass('active');
+        console.log(windowscroll);
+        
+        if (windowscroll < 1305) {
+            $('.nav>li').removeClass('active');
+            $('.nav>li:nth-child(1)').addClass('active');
         }
-
+        else if (windowscroll >= 1305 && windowscroll < 3779) {
+            $('.nav>li').removeClass('active');
+            $('.nav>li:nth-child(2)').addClass('active');
+        }
+        else if (windowscroll >= 3779 && windowscroll < 4470) {
+            $('.nav>li').removeClass('active');
+            $('.nav>li:nth-child(3)').addClass('active');
+        }
+        else if (windowscroll >= 4470) {
+            $('.nav>li').removeClass('active');
+            $('.nav>li:nth-child(4)').addClass('active');
+        }
+        
     }).scroll();
 });

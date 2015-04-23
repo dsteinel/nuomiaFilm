@@ -15,7 +15,6 @@
   setTimeout(
     function() 
     {
-      console.log('MACH ES JETZT');
       $(function() {
         var iframe = $('#player1')[0];
         var player = $f(iframe);
@@ -119,7 +118,7 @@
       /** SCROLL BACK TO TOP **/
       var interval = setInterval(function(){
        if (document.readyState === 'complete') {
-         $window.scrollTo(0, 0);
+         // $window.scrollTo(0, 0);
          clearInterval(interval);
        }
      }, 100);
@@ -136,6 +135,11 @@
  noumiaApp.controller('TransitionCtrl', function($scope) {
   $scope.pageClass = 'page-transition';
 });
- noumiaApp.controller('MainCtrl', function($scope) {
+ noumiaApp.controller('MainCtrl', function($scope, $location, $anchorScroll) {
   $scope.pageClass = 'page-transition';
+  $scope.scrollTo = function(id) {
+    $location.hash(id);
+    console.log($location.hash());
+    $anchorScroll();
+  };
 });
