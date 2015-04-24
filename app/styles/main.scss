@@ -1,8 +1,7 @@
 // bower:scss
 // endbower
 
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Karma:300|Unica+One);
-
+@import url(http://fonts.googleapis.com/css?family=Muli:300,400|Open+Sans:400,700,800);
 @mixin vertical-align {
   position: relative;
   top: 50%;
@@ -21,6 +20,7 @@
 body, html{
    overflow-x: hidden;
    background-color:  #444444;
+   font-family: 'Muli', serif;
 }
 
 figure {
@@ -34,7 +34,7 @@ body {
 
 p{
   font-size: 1.2em;
-  font-family: 'Karma', serif;
+  font-family: 'Muli', serif;
 }
 
 a{
@@ -46,16 +46,19 @@ a{
 }
 
 h1{
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
   font-size: 3em;
   letter-spacing: 0.2em;
   color: #333;
 }
-
+h2{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+}
 h3{
-  font-family: 'Karma', serif;
-  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
   font-size: 1.4em;
   color: rgb(22,160,133);
 }
@@ -251,7 +254,7 @@ figure#videoID{
       color: #F6F4F4;
       font-size: 1.6em;
       line-height: 26px;
-      font-family: 'Source Sans Pro', sans-serif;
+      font-family: 'Muli', sans-serif;
       font-weight: 300;
       @media (max-width: 767px) {
          text-align: justify;
@@ -275,7 +278,7 @@ figure#videoID{
    p{
       font-size: 1.6em;
       line-height: 26pt;
-      font-family: 'Source Sans Pro', sans-serif;
+      font-family: 'Muli', sans-serif;
       font-weight: 300;
     }
     a{
