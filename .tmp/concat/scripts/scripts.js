@@ -49,7 +49,7 @@
         $('#video-text-overlay').fadeOut(300);
       }
     });
-    }, 5000);
+    }, 2000);
 
 });
 
@@ -139,7 +139,7 @@
   $scope.pageClass = 'page-transition';
   $scope.scrollTo = function(id) {
     $location.hash(id);
-    console.log($location.hash());
+    // console.log($location.hash());
     $anchorScroll();
   };
 }]);
@@ -148,30 +148,30 @@
 /* global $ */
 
 $( document ).ready(function() {
-
     $(window).scroll(function() {
         var windowscroll = $(window).scrollTop();
         console.log(windowscroll);
         
-        if (windowscroll < 1305) {
+        if (windowscroll < 1105) {
             $('.nav>li').removeClass('active');
             $('.nav>li:nth-child(1)').addClass('active');
         }
-        else if (windowscroll >= 1305 && windowscroll < 3779) {
+        else if (windowscroll >= 1105 && windowscroll < 2500) {
             $('.nav>li').removeClass('active');
             $('.nav>li:nth-child(2)').addClass('active');
         }
-        else if (windowscroll >= 3779 && windowscroll < 4470) {
+        else if (windowscroll >= 2500 && windowscroll < 3600) {
             $('.nav>li').removeClass('active');
             $('.nav>li:nth-child(3)').addClass('active');
         }
-        else if (windowscroll >= 4470) {
+        else if (windowscroll >= 3600) {
             $('.nav>li').removeClass('active');
             $('.nav>li:nth-child(4)').addClass('active');
         }
         
     }).scroll();
 });
+
 'use strict';
 
 /**

@@ -49,7 +49,7 @@
         $('#video-text-overlay').fadeOut(300);
       }
     });
-    }, 5000);
+    }, 2000);
 
 });
 
@@ -139,7 +139,7 @@
   $scope.pageClass = 'page-transition';
   $scope.scrollTo = function(id) {
     $location.hash(id);
-    console.log($location.hash());
+    // console.log($location.hash());
     $anchorScroll();
   };
 });
