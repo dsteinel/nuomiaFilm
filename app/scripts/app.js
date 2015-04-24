@@ -49,7 +49,7 @@
         $('#video-text-overlay').fadeOut(300);
       }
     });
-    }, 2000);
+    }, 100);
 
 });
 
@@ -80,9 +80,9 @@
     templateUrl: 'views/project.html',
     controller: 'maedchenCtrl'
   })
-  .when('/wayw', {
+  .when('/NoumiaTrailer', {
     templateUrl: 'views/project.html',
-    controller: 'waywCtrl'
+    controller: 'NoumiaCtrl'
   })
   .otherwise({
     redirectTo: '/views/main.html'

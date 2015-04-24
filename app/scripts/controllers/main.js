@@ -38,6 +38,19 @@ angular.module('noumiaApp')
    };
 });
 
+angular.module('noumiaApp')
+.controller('NoumiaCtrl', function ($scope, $sce) {
+   $scope.projectHead = 'Noumia Film';
+   $scope.projectDescription = '';
+   $scope.sublineProject = '';
+
+   $scope.immediate = { video: $sce.trustAsResourceUrl('https://player.vimeo.com/video/125706330?api=1&player_id=player1') };
+
+   $scope.getVideoUrl = function(video) {
+      return video && $sce.trustAsResourceUrl('https://player.vimeo.com/video/125706330?api=1&player_id=player1');
+   };
+});
+
 
 angular.module('noumiaApp')
 .controller('oisCtrl', function ($scope) {
