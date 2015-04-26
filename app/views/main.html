@@ -3,30 +3,26 @@
    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
          <div class="navbar-header">
-
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-               <span class="sr-only">Toggle navigation</span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
             </button>
-
-<!--                <a class="navbar-brand" href="#/">noumia</a>
--->              </div>
-
-<div class="menu collapse navbar-collapse" id="js-navbar-collapse">
-   <ul class="nav navbar-nav pull-right">
-      <li class="active"><a ng-click="scrollTo('theStart')">Start</a></li>
-      <li><a ng-click="scrollTo('work')">Work</a></li>
-      <li><a ng-click="scrollTo('weImage')">Team</a></li>
-      <li><a ng-click="scrollTo('contactSection')">Contact</a></li>
-      <li><a ng-click="scrollTo('impressum')">Impressum</a></li>
-   </ul>
+            <!--                <a class="navbar-brand" href="#/">noumia</a>
+         -->              </div>
+         <div class="menu collapse navbar-collapse" id="js-navbar-collapse">
+            <ul class="nav navbar-nav pull-right">
+               <li class="active"><a ng-click="scrollTo('theStart')">Start</a></li>
+               <li><a ng-click="scrollTo('work')">Work</a></li>
+               <li><a ng-click="scrollTo('weImage')">Team</a></li>
+               <li><a ng-click="scrollTo('contactSection')">Contact</a></li>
+               <li><a ng-click="scrollTo('impressum')" data-toggle="modal" data-target="#myModal">Impressum</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
 </div>
-</div>
-</div>
-</div>
-
 <div class="container-fluid">
    <section id="head">
       <div class="row">
@@ -35,33 +31,33 @@
          </div>
       </div>
    </section>
-   <section id="headIndexSite">
+   <section id="aboutSection">
       <div class="row">
+
          <div class="col-xs-10 col-xs-offset-1">
-            <img src="images/ivan-head.jpg" alt="Ivan Head" class="img-responsive">
+            <div class="col-xs-12">
+               <img src="images/ivan-head.jpg" alt="Ivan Head" class="img-responsive" width="200%">
+            </div>
          </div>
       </div>
    </section>
-
-
    <section class="aboutSection">
       <div class="row">
          <div class="col-xs-10 col-xs-offset-1">
             <div class="first-concrete-text-overlay">
-               <figure>
+               <figure class="col-xs-12">
                   <img src="images/hintergrund-1.jpg" alt="concrete" class="img-responsive">
                   <figcaption class="col-xs-8 col-xs-offset-2">
-                     <h2>
-                     WE ARE FREELANCE MOVIE DIRECTORS AND MOTION DESIGNER 
-                     BASED IN BERLIN, GERMANY.
-                     </h2>
+                  <h2>
+                  WE ARE FREELANCE MOVIE DIRECTORS AND MOTION DESIGNER
+                  BASED IN BERLIN, GERMANY.
+                  </h2>
                   </figcaption>
                </figure>
             </div>
          </div>
       </div>
    </section>
-
    <section id="work">
       <div class="row">
          <div class="center-block text-center">
@@ -75,9 +71,9 @@
                   <figure class="centerText-effect image-border">
                      <img src="images/ivan-cover.jpg" alt="XYZ" class="img-responsive">
                      <figcaption class="center-text-vertical">
-                        <h2><span>DJADO IVAN</span></h2>
-                        <!-- <p>Arduino, Craftsman</p> -->
-                        <a ng-href="#/Djado-Ivan"></a> 
+                     <h2><span>DJADO IVAN</span></h2>
+                     <!-- <p>Arduino, Craftsman</p> -->
+                     <a ng-href="#/Djado-Ivan"></a>
                      </figcaption>
                   </figure>
                </div>
@@ -87,93 +83,155 @@
                   <figure class="centerText-effect image-border">
                      <img src="images/leni.jpg" alt="XYZ" class="img-responsive">
                      <figcaption class="center-text-vertical">
-                        <h2><span>LENI</span></h2>
-                           <!-- <p>Arduino, Craftsman</p> -->
-                           <a ng-href="#/Leni"></a>
-                        </figcaption>
-                     </figure>
-                  </div>
-               </div>
-            </div>
-            <div class="col-md-10 col-md-offset-1 margin-to-row">
-               <div class="hover-effect-grid">
-                  <div class="col-md-6">
-                     <figure class="centerText-effect image-border">
-                        <img src="images/maedchenstadtplan.jpg" alt="XYZ" class="img-responsive">
-                        <figcaption class="center-text-vertical">
-                           <h2><span>Mädchenstadtplan</span></h2>
-                           <!-- <p>Arduino, Craftsman</p>-->
-                           <a ng-href="#/Maedchenstadtplan"></a> 
-                        </figcaption>
-                     </figure>
-                  </div>
-               </div>
-               <div class="hover-effect-grid">
-                  <div class="col-md-6">
-                     <figure class="centerText-effect image-border">
-                        <img src="images/noumia-film-cover.jpg" alt="XYZ" class="img-responsive">
-                        <figcaption class="center-text-vertical">
-                           <h2><span>NOUMIA FILM</span></h2>
-                           <!-- <p>Arduino, Craftsman</p> -->
-                           <a ng-href="#/NoumiaTrailer"></a>
-                        </figcaption>
-                     </figure>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-
-
-      <section id="weImage">
-         <div class="row">
-            <div class="col-xs-10 col-xs-offset-1">
-               <img src="images/we.jpg" alt="yes we are that" class="img-responsive">
-            </div>
-         </div>
-      </section>
-      
-      <section class="aboutSection">
-         <div class="row">
-            <div class="col-xs-10 col-xs-offset-1">
-               <div class="second-concrete-text-overlay">
-                  <figure>
-                     <img src="images/hintergrund-1.jpg" alt="concrete" class="img-responsive">
-                     <figcaption class="col-xs-8 col-xs-offset-2">
-                        <span>
-                           <h2>noumia FILM</h2>
-                           <h3>SILKE MEYA & LAURA MENTGEN</h3>
-                           <p>
-                              It is our philosophy to immerge into the protagonist's world leaving it
-                              untouched. From reality we draw inspiration and ideas for our films which
-                              tell stories of everyday life from a documentary point of view.
-                           </p>
-                        </span>
+                     <h2><span>LENI</span></h2>
+                     <!-- <p>Arduino, Craftsman</p> -->
+                     <a ng-href="#/Leni"></a>
                      </figcaption>
                   </figure>
                </div>
             </div>
          </div>
-      </section>
-      <section id="contactSection">
-         <div class="row">
-            <div class="center-block text-center">
-               <h1>FEEL FREE TO CONTACT US!</h1>
+         <div class="col-md-10 col-md-offset-1 margin-to-row">
+            <div class="hover-effect-grid">
+               <div class="col-md-6">
+                  <figure class="centerText-effect image-border">
+                     <img src="images/maedchenstadtplan.jpg" alt="XYZ" class="img-responsive">
+                     <figcaption class="center-text-vertical">
+                     <h2><span>Mädchenstadtplan</span></h2>
+                     <!-- <p>Arduino, Craftsman</p>-->
+                     <a ng-href="#/Maedchenstadtplan"></a>
+                     </figcaption>
+                  </figure>
+               </div>
             </div>
-         </div>
-         <div class="row">
-            <div class="col-xs-4 col-xs-offset-4">
-               <p>
-                  +49/17632486105
-                  <br>
-                  <a href="mailto:SILKEUNDLAURA@gmail.com">SILKEUNDLAURA@GMAIL.COM</a>
-               </p>
-               <div class="col-md-4 col-md-offset-4 col-xs-8 col-xs-offset-2">
-                  <img src="images/noumia-tier.svg" alt="" class="img-responsive">
+            <div class="hover-effect-grid">
+               <div class="col-md-6">
+                  <figure class="centerText-effect image-border">
+                     <img src="images/noumia-film-cover.jpg" alt="XYZ" class="img-responsive">
+                     <figcaption class="center-text-vertical">
+                     <h2><span>NOUMIA FILM</span></h2>
+                     <!-- <p>Arduino, Craftsman</p> -->
+                     <a ng-href="#/NoumiaTrailer"></a>
+                     </figcaption>
+                  </figure>
                </div>
             </div>
          </div>
-      </section>
+      </div>
+   </section>
+   <section id="weImage">
+      <div class="row">
+         <div class="col-xs-10 col-xs-offset-1">
+            <img src="images/we.jpg" alt="yes we are that" class="img-responsive">
+         </div>
+      </div>
+   </section>
+   
+   <section class="aboutSection">
+      <div class="row">
+         <div class="col-xs-10 col-xs-offset-1">
+            <div class="second-concrete-text-overlay">
+               <figure>
+                  <img src="images/hintergrund-1.jpg" alt="concrete" class="img-responsive">
+                  <figcaption class="col-xs-8 col-xs-offset-2">
+                  <span>
+                     <h2>noumia FILM</h2>
+                     <h3>SILKE MEYA & LAURA MENTGEN</h3>
+                     <p>
+                        It is our philosophy to immerge into the protagonist's world leaving it
+                        untouched. From reality we draw inspiration and ideas for our films which
+                        tell stories of everyday life from a documentary point of view.
+                     </p>
+                  </span>
+                  </figcaption>
+               </figure>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section id="contactSection">
+      <div class="row">
+         <div class="center-block text-center">
+            <h1>FEEL FREE TO CONTACT US!</h1>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-xs-4 col-xs-offset-4">
+            <p>
+               +49/17632486105
+               <br>
+               <a href="mailto:SILKEUNDLAURA@gmail.com">SILKEUNDLAURA@GMAIL.COM</a>
+            </p>
+            <div class="col-md-4 col-md-offset-4 col-xs-8 col-xs-offset-2">
+               <img src="images/noumia-tier.svg" alt="" class="img-responsive">
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Modal -->
+   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+               <h4 class="modal-title" id="myModalLabel">Impressum</h4>
+            </div>
+            <div class="modal-body">
+               Noumia Film GbR
+Disclaimer – rechtliche Hinweise
+<br>
+<br>
+<strong>1. Haftungsbeschränkung</strong>
+<br>
 
-
-   </div>   
+Die Inhalte des Internetauftritts wurden mit größtmöglicher Sorgfalt und nach bestem Gewissen erstellt.
+Dennoch übernimmt der Anbieter dieser Webseite keine Gewähr für die Aktualität, Vollständigkeit und
+Richtigkeit der bereitgestellten Seiten und Inhalte.
+Als Diensteanbieter ist der Anbieter dieser Webseite gemäß § 7 Abs. 1 TMG für eigene Inhalte und bereitgestellte
+Informationen auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich; nach den
+§§ 8 bis 10 TMG jedoch nicht verpflichtet, die übermittelten oder gespeicherten fremden Informationen
+zu überwachen. Eine Entfernung oder Sperrung dieser Inhalte erfolgt umgehend ab dem Zeitpunkt der
+Kenntnis einer konkreten Rechtsverletzung. Eine Haftung ist erst ab dem Zeitpunkt der Kenntniserlangung
+möglich.
+<br>
+<br>
+<strong>2. Externe Links</strong>
+<br>
+Die Webseite enthält sog. „externe Links“ (Verlinkungen) zu anderen Webseiten, auf deren Inhalt der
+Anbieter der Webseite keinen Einfluss hat. Aus diesem Grund kann der Anbieter für diese Inhalte auch
+keine Gewähr übernehmen.
+Für die Inhalte und Richtigkeit der bereitgestellten Informationen ist der jeweilige Anbieter der verlinkten
+Webseite verantwortlich. Zum Zeitpunkt der Verlinkung waren keine Rechtsverstöße erkennbar. Bei
+Bekanntwerden einer solchen Rechtsverletzung wird der Link umgehend entfernen.
+<br>
+<br>
+<strong>3. Urheberrecht/Leistungsschutzrecht</strong>
+Die auf dieser Webseite veröffentlichten Inhalte, Werke und bereitgestellten Informationen unterliegen
+dem deutschen Urheberrecht und Leistungsschutzrecht. Jede Art der Vervielfältigung, Bearbeitung, Verbreitung,
+Einspeicherung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedarf
+der vorherigen schriftlichen Zustimmung des jeweiligen Rechteinhabers. Das unerlaubte Kopieren/
+Speichern der bereitgestellten Informationen auf diesen Webseiten ist nicht gestattet und strafbar.
+<br>
+<br>
+<strong>4. Datenschutz</strong>
+Durch den Besuch des Internetauftritts können Informationen (Datum, Uhrzeit, aufgerufene Seite) über
+den Zugriff auf dem Server gespeichert werden. Es werden keine personenbezogenenen (z. B. Name,
+Anschrift oder E-Mail-Adresse) Daten, gespeichert.
+Sofern personenbezogene Daten erhoben werden, erfolgt dies, sofern möglich, nur mit dem vorherigen
+Einverständnis des Nutzers der Webseite. Eine Weitergabe der Daten an Dritte findet ohne ausdrückliche
+Zustimmung des Nutzers nicht statt.
+Der Anbieter weist darauf hin, dass die Übertragung von Daten im Internet (z. B. per E-Mail) Sicherheitslücken
+aufweisen und ein lückenloser Schutz der Daten vor dem Zugriff Dritter nicht gewährleistet
+werden kann. Der Anbieter übernimmt keine Haftung für die durch solche Sicherheitslücken entstandenen
+Schäden.
+Der Verwendung der Kontaktdaten durch Dritte zur gewerblichen Nutzung wird ausdrücklich widersprochen.
+Es sei denn, der Anbieter hat zuvor seine schriftliche Einwilligung erteilt.
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Modal  END -->
+</div>
